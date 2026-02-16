@@ -1,0 +1,13 @@
+clear-interval-seconds: 120
+
+whitelist:
+  - DIAMOND
+  - NETHERITE_INGOT
+  - NETHERITE_SCRAP
+  - ENCHANTED_GOLDEN_APPLE
+
+messages:
+  warn60: "§e[Clear] Items will be cleared in 60 seconds!"
+  warn30: "§c[Clear] Items will be cleared in 30 seconds!"
+  countdown: "§4[Clear] Clearing in %time% seconds!"
+  cleared: "§a[Clear] Removed %amount% natural items!"
