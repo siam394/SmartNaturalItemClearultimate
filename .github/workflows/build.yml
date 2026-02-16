@@ -1,0 +1,28 @@
+name: Build Plugin
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build with Maven
+        run: mvn clean package
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SmartNaturalItemClear
+          path: target/*.jar
