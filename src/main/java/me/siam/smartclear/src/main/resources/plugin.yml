@@ -1,0 +1,6 @@
+name: SmartNaturalItemClear
+version: 1.0
+main: me.siam.smartclear.SmartNaturalItemClear
+api-version: 1.21
+author: Siam
+description: Clears only natural ground items safely
